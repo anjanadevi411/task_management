@@ -1,0 +1,79 @@
+#main-div {
+  border: solid #ccc;
+  background-color: #ccc;
+  text-align: center;
+}
+
+.sub-div {
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  text-align: center;
+}
+
+#task-form {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#task {
+  margin: 10px;
+  height: 30px;
+  font-size: 20px;
+  width: 70%;
+}
+
+.submit-btn {
+  margin: 10px;
+  text-align: center;
+  height: 30px;
+  width: 30%;
+}
+
+.list-ul {
+  display: inline-block;
+  width: 100%;
+}
+
+.list-li {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px gray;
+  text-align: left;
+  height: 30px;
+  font-size: 20px;
+  max-width: 80%;
+  list-style: none;
+}
+
+.finish-task {
+  text-decoration: line-through;
+  background-color: green;
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  max-width: 80%;
+}
+
+.remove-all {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.remove-a {
+  text-align: end;
+  color: black;
+}
+
+.tick-a i {
+  text-align: start;
+  color: white;
+}
+
+.tick-a .remove-a i {
+  text-align: start;
+  color: white;
+}
