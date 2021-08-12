@@ -11,6 +11,13 @@
   text-align: center;
 }
 
+.list-div {
+  background-color: rgb(218, 214, 214);
+  color: black;
+  width: 100%;
+  height: auto;
+}
+
 #task-form {
   display: flex;
   text-align: center;
@@ -21,7 +28,7 @@
   margin: 10px;
   height: 30px;
   font-size: 20px;
-  width: 70%;
+  width: 100%;
 }
 
 .submit-btn {
@@ -40,8 +47,10 @@
   background-color: rgb(255, 255, 255);
   color: black;
   border: 1px gray;
+  margin: 1px;
+  padding-top: 6px;
   text-align: left;
-  height: 30px;
+  height: 40px;
   font-size: 20px;
   max-width: 80%;
   list-style: none;
@@ -49,13 +58,15 @@
 
 .finish-task {
   text-decoration: line-through;
-  background-color: rgb(92, 194, 92);
+  background-color: rgb(15, 95, 15);
   list-style: none;
   font-size: 20px;
   text-align: left;
   color: white;
   max-width: 80%;
-  height: 30px;
+  margin: 1px;
+  padding-top: 6px;
+  height: 40px;
 }
 
 .remove-all {
@@ -65,8 +76,9 @@
 }
 
 .remove-a {
-  text-align: end;
+  position: absolute;
   color: black;
+  right: 18%;
 }
 .check-input {
   opacity: 0;
@@ -75,6 +87,4 @@
 .check-input:hover,
 .check-input:checked + .list-li :after {
   opacity: 1;
-  color: black;
-  content: "✓";
 }
