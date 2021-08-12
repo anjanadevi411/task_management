@@ -37,10 +37,9 @@ function addTask(e){
     //create checkbox
     const cb = document.createElement('input');
     cb.className = 'check-input';
+    cb.checked = true;
     cb.type = "checkbox";
-    //const label = document.createElement('label');
-    //label.setAttribute('for','check-input');
-    //cb.appendChild(label)
+
     task_li.appendChild(cb);
 
 
@@ -51,11 +50,6 @@ function addTask(e){
     link.innerHTML = '<i class="fa fa-remove"></i>';
     task_li.appendChild(link)
     task_list.appendChild(task_li);
-
-    /*const tick = document.createElement('a');
-    tick.className = 'tick-a';
-    tick.innerHTML = '<i class="fa fa-check"></i>';
-    task_li.appendChild(tick);*/
     
 
     input_task.value = '';
@@ -73,14 +67,16 @@ function removeTask(e){
 
 
 function finishedtask(e){
-    console.log(e.target);
+    
     if(e.target.classList.contains('check-input')){
         e.target.parentElement.className = 'finish-task';
         e.target.className = 'checked';
+        e.target.parentElement.querySelector('a').style.color = 'white';
     }
     else{
         e.target.parentElement.className = 'list-li';
         e.target.className = 'check-input';
+        e.target.parentElement.querySelector('a').style.color = "black";
     }
 }
 
