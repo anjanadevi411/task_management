@@ -58,7 +58,7 @@ function addTask(e){
 
 
 function removeTask(e){
-    if(e.target.parentElement.classList.contains('remove-a')){
+    if(e.target.parentElement.className === 'remove-a'){
         e.target.parentElement.parentElement.remove();
     }
     
@@ -73,16 +73,18 @@ function finishedtask(e){
         e.target.className = 'checked';
         e.target.parentElement.querySelector('a').style.color = 'white';
     }
-    else{
+
+    else if(e.target.className === 'checked'){
+        e.target.parentElement.querySelector('a').style.color = "black";
         e.target.parentElement.className = 'list-li';
         e.target.className = 'check-input';
-        e.target.parentElement.querySelector('a').style.color = "black";
     }
+    
+    e.preventDefault();
 }
 
 function removeAll(e){
     task_list.innerHTML = '';
-
     e.preventDefault();
 }
 
